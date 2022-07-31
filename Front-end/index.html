@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <script>
+        function back(){
+            document.body.innerHTML = "<div class=\"searchbox\"><h1>IR Assignment 2 </h1><input type=\"text\" id=\"searchbar\" placeholder=\"Enter your query \"> <br><br><button onclick=\"abc()\">Search</button></div><div id= \"printhere\"></div>";
+        }
+        function abc(){
+            var querytextbox = document.getElementById("searchbar");
+            query= querytextbox.value;
+            eel.start(query);
+            querytextbox.value='';
+        }
+        function emptytextarea(){
+            var div = document.getElementById("printhere");
+            div.innerHTML= "";
+            document.body.innerHTML  = "<div class=\"outputbox\"><div id= \"printhere\"></div></div>";
+            document.body.innerHTML += "<div class=\"back\"><button onclick=\"back()\">back</button></div>";
+            
+        }
+        eel.expose(emptytextarea)
+        function printthere(text){
+            var div= document.getElementById("printhere");
+            div.innerHTML += "  " + text;
+        }
+        eel.expose(printthere);
+    </script>
+
+</head>
+<body>
+    <div class="searchbox">
+        <h1>IR Assignment 2 </h1>
+        <input type="text" id="searchbar" placeholder="Enter your query "> <br><br>
+        <button onclick="abc()">Search</button>
+    </div>
+        
+    <div id= "printhere"></div>
+
+</body>
+
+</html>

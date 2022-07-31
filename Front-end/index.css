@@ -1,0 +1,83 @@
+*{
+    font-family: 'Dancing Script', cursive;
+}
+body {
+    /* : white; */
+    color: white;
+    background-image: url('ir.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.searchbox{
+    position: absolute;
+    right:35%;
+    top: 20%;
+    border-radius: 30%;
+    padding: 2%;
+    text-align: center;
+    /* padding: 70px 0; */
+    border: 3px solid white;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: inset 0px 0px 20px 5px white;
+}
+
+.searchbox h1{
+    font-size: 60px;
+}
+
+.searchbox input{
+    /* position: relative; */
+    font-size: 150%;
+    text-align: center;
+    box-shadow: 0px 0px 15px currentcolor;
+    border: 5px solid currentcolor;
+    align-items: center;
+    border-radius: 22px;
+    background: #c8c8c9;
+    width: 320px;
+    height: 50px;
+}
+
+.searchbox button {
+    text-align: center;
+    box-shadow: 6px 7px 20px 7px black;
+    width: 35%;
+    height: 60px;
+    border-radius: 47%;
+    font-size: 190%;
+}
+
+.back button{
+    text-align: center;
+    box-shadow: 6px 7px 20px 7px black;
+    width: 13%;
+    height: 66px;
+    border-radius: 47%;
+    font-size: 300%;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+
+}
+
+.searchbox button:hover, .back button:hover{
+    
+    color: rgb(75, 50, 221);
+    background-color: rgb(173, 170, 170);
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+.outputbox{
+    font-size: 160%;
+    margin-top: 15%;
+    padding: 2%;
+    border-radius: 17px;
+    text-align: center;
+    border: 3px solid white;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: inset 0px 0px 20px 5px white;
+}
