@@ -15,7 +15,7 @@ scoring. Continuous scoring between queries and documents.
 
 
 steps to run:
-1) Open Project (Assign2) in your IDE.
+1) Open Project (Vector-Space-Model) in your IDE.
 2) First run preprocessing.py
 3) Run main.py
 
